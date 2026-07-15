@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Graduate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+<body class="w-full p-0 m-0 bg-[#0f0f0f]">
+    <section>
+<header id="siteHeader" class="fixed top-0 left-0 w-full h-[10vh] bg-[#0f0f0f]/60 border-b-4 border-[#faf9f6] flex justify-between items-center px-4 z-50 transition-transform duration-300">
+    <a href="index.html"><img src="SharpCutzLogo.png" alt="Sharp Cutz logo" class="h-[8vh]"></a>
+    
+    <!-- Mobile menu button -->
+    <i class="sm:hidden cursor-pointer fa-solid fa-bars text-3xl text-[#faf9f6]" id="menuBtn"></i>
+
+    <!-- Desktop nav -->
+    <nav class="hidden sm:flex gap-10 text-[#faf9f6] text-xl pr-[2vw] items-center lg:text-[1.375xl] xl:text-2xl font-outfit">
+        <a href="index.html" class="hover:scale-110 duration-300">Home</a>
+        <a href="index.html" class="hover:scale-110 duration-300">About Us</a>
+        <a href="index.html#Pricing" class="hover:scale-110 duration-300">Services</a>
+        <a href="index.html#Contact" class="bg-[#C02B31] px-3 py-2 rounded-sm uppercase font-bold hover:scale-110 duration-300 font-graduate">Contact</a>
+    </nav>
+
+    <!-- Mobile nav -->
+
+<div id="mobileHeader" class="font-graduate fixed top-0 right-0 h-screen w-[80%] bg-[#faf9f6] text-[#121212] flex flex-col gap-10 pt-20 px-6 transform translate-x-full transition-transform duration-300 z-60 sm:hidden font-semibold">
+
+    <!-- Close button -->
+    <i class="fa-solid fa-xmark text-3xl h-8 w-8 absolute top-4 right-4 cursor-pointer text-[#121212]" id="closeMenuBtn"></i>
+
+    <!-- Links -->
+    <a href="index.html" class="hover:scale-110 duration-300">Home</a>
+    <a href="index.html" class="hover:scale-110 duration-300">About Us</a>
+    <a href="index.html#Pricing" class="hover:scale-110 duration-300">Services</a>
+    <a href="index.html#Contact" class="hover:scale-110 duration-300">Contact</a>
+</div>
+</header></section>
+
+
+
+
+
+
+
+
+
+<section class="relative w-full h-[95vh] border-b-2 border-[#faf9f6] flex items-center text-[#faf9f6]">
+
+  <!-- Image Side -->
+<div class="absolute inset-0 sm:relative sm:right-0 sm:top-0 h-full w-full sm:w-1/2 z-0">
+  <img src="hero.jpg" alt="abstract image" class="h-full w-full object-cover sm:rounded-sm">
+
+  <!-- Mobile readability overlay -->
+  <div class="absolute inset-0 bg-black/[62%] sm:hidden"></div>
+
+</div>
+    <div class="absolute inset-0 "></div>
+  </div>
+
+  <!-- Text Side -->
+  <div class="relative z-10 w-full sm:w-1/2 px-3 sm:px-10 flex flex-col gap-6">
+
+<h1 class="font-bold text-3xl sm:text-5xl 2xl:text-6xl leading-tight font-graduate">
+  Randallstown's  <span class="text-[#C02B31]">Premier</span> Barbershop
+</h1>
+
+<p class="text-base sm:text-lg 2xl:text-xl max-w-[90%] sm:max-w-[80%] leading-relaxed font-outfit">
+  Sharp fades. Classic cuts. Built around confidence.
+</p>
+
+    <a href="#Contact" class="w-fit px-8 py-4 bg-[#C02B31] rounded-sm text-lg sm:text-2xl font-bold font-outfit
+              drop-shadow-[0_8px_15px_rgba(0,0,0,0.6)]
+              transition-transform duration-300 hover:scale-105">
+      <i class="fa-solid fa-phone pr-4"></i>(410) 655-2988
+    </a>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+<section class="pt-[15vh] px-[3vw] mx-auto max-w-[1600px]">
+<!-- Header -->
+<div class="text-center mb-16">
+  <h2 class="text-4xl md:text-5xl font-bold mb-4 font-graduate text-[#fff]">
+    The Art of Traditional Barbering
+  </h2>
+
+  <p class="text-gray-400 max-w-2xl mx-auto">
+    Providing timeless cuts and modern styles with a focus on craftsmanship, precision, and personal service.
+  </p>
+</div>
+
+<!-- Main Grid -->
+<div class="
+  grid 
+  md:grid-cols-2 
+  gap-12 
+  items-center 
+  mb-20 
+  justify-items-center
+">
+
+  <!-- Left -->
+  <div>
+    <h3 class="text-2xl font-semibold mb-4 text-[#C02B31] font-graduate lg:text-5xl">
+      Our Story
+    </h3>
+
+    <p class="text-gray-300 leading-relaxed mb-4 font-outfit text-xl">
+      More than just a haircut, we create an experience where every client leaves feeling confident and refreshed.<br>
+      With a passion for detail and classic barbering traditions, our barbers deliver clean cuts tailored to each individual's style.
+    </p>
+  </div>
+
+
+  <!-- Image 1 -->
+  <img 
+    src="person.jpg" 
+    alt="Barber cutting hair"
+    class="
+      w-full
+      max-w-[550px]
+      aspect-[4/3]
+      object-cover
+      rounded-md
+      object-top
+    "
+  >
+
+
+  <!-- Image 2 -->
+  <img 
+    src="Shop.jpg" 
+    alt="Barbershop interior"
+    class="
+      w-full
+      max-w-[550px]
+      aspect-[4/3]
+      object-cover
+      rounded-md
+      object-top
+    "
+  >
+
+
+  <!-- Right -->
+  <div class="
+    border 
+    border-[#C02B31]/30 
+    p-8 
+    rounded-xl 
+    w-full
+    max-w-[550px]
+  ">
+
+    <h4 class="text-lg font-semibold mb-4 text-white font-graduate lg:text-4xl">
+      What We Value
+    </h4>
+
+    <ul class="space-y-3 text-gray-300 font-outfit text-lg">
+      <li>• Craftsmanship in every cut</li>
+      <li>• Classic techniques, modern styles</li>
+      <li>• A welcoming atmosphere</li>
+      <li>• Quality service every visit</li>
+    </ul>
+
+  </div>
+
+</div>
+
+</section>
+
+
+
+<section class="my-[10vh]">
+  <div class="max-w-[1400px] mx-auto px-6 font-graduate">
+
+    <h1 class="text-4xl lg-textt-6xl text-white font-bold text-center mb-20 lg:px-40">
+      Services
+    </h1>
+
+    <div class="
+      grid gap-y-24
+      sm:grid-cols-2 sm:gap-x-12
+      lg:gap-y-16 lg:gap-x-0
+      justify-items-center
+      max-w-[1000px]
+      mx-auto
+    ">
+
+      <!-- Card 1 -->
+      <div class="relative max-w-[450px] w-full aspect-video rounded-sm overflow-hidden hover:scale-[1.03] transition shadow-[0_16px_40px_rgba(0,0,0,0.45)]">
+        <img src="services/fade.jpg" class="w-full h-full object-cover border-white border-2 ">
+
+        <h2 class="
+          absolute bottom-5 left-5
+          text-white
+          text-4xl
+          font-bold
+          drop-shadow-[0_3px_6px_rgba(0,0,0,0.8)]
+        ">
+          Fade Haircuts
+        </h2>
+      </div>
+
+
+
+      <!-- Card 2 -->
+      <div class="relative max-w-[450px] w-full aspect-video rounded-sm overflow-hidden hover:scale-[1.03] transition shadow-[0_16px_40px_rgba(0,0,0,0.45)]">
+        <img src="services/lineup.jpg" class="w-full h-full object-cover border-white border-2">
+
+        <h2 class="
+          absolute bottom-5 left-5
+          text-white
+          text-4xl
+          font-bold
+          drop-shadow-[0_3px_6px_rgba(0,0,0,0.8)]
+        ">
+          Line Ups
+        </h2>
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="relative max-w-[450px] w-full aspect-video rounded-sm overflow-hidden scale-[1.05] z-20 hover:scale-[1.08] transition shadow-[0_30px_70px_rgba(0,0,0,0.7)]">
+        <img src="services/beard.jpg" class="w-full h-full object-cover border-white border-2">
+
+        <h2 class="
+          absolute bottom-5 left-5
+          text-white
+          text-4xl
+          font-bold
+          drop-shadow-[0_3px_6px_rgba(0,0,0,0.8)]
+        ">
+          Beard Grooming
+        </h2>
+      </div>
+
+
+      <!-- Card 4 -->
+      <div class="relative max-w-[450px] w-full aspect-video rounded-sm overflow-hidden hover:scale-[1.03] transition shadow-[0_14px_34px_rgba(0,0,0,0.4)]">
+        <img src="services/combo.jpg" class="w-full h-full object-cover object-[center_75%] border-white border-2">
+
+        <h2 class="
+          absolute bottom-5 left-5
+          text-white
+          text-4xl
+          font-bold
+          drop-shadow-[0_3px_6px_rgba(0,0,0,0.8)]
+        ">
+          Haircut + Beard
+        </h2>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="py-24 !px-[10px] text-[#faf9f6] font-outfit">
+  <div class="max-w-7xl mx-auto">
+
+    <h2 class="text-center text-4xl lg:text-6xl font-bold font-graduate">
+      Trusted by Real People
+    </h2>
+
+    <div class="mt-16 grid gap-10 sm:grid-cols-2 xl:grid-cols-3">
+
+      <!-- TESTIMONIAL -->
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg min-w-[300px]">
+        <p class="text-lg leading-relaxed">
+          "This shop is a throwback with excellent barbers. Dave has been cutting my hair for over 15 years, and the no-appointment policy makes it even better."
+        </p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="reviews/person1.png">
+          <div>
+            <p class="font-semibold">Lenny McNair</p>
+            <p class="text-sm opacity-60">Local Guide</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg min-w-[300px]">
+        <p class="text-lg leading-relaxed">
+          "Dave has been cutting my hair since before I was six. I've never had a complaint—he always gets the job done. Fantastic barber that I highly recommend."
+        </p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="reviews/person2.png">
+          <div>
+            <p class="font-semibold">Christian Harris</p>
+            <p class="text-sm opacity-60">Customer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg min-w-[300px]">
+        <p class="text-lg leading-relaxed">
+          "Dave has been cutting my family's hair for years. Excellent service, quality cuts, and we don't go anywhere else."
+        </p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="reviews/person3.png">
+          <div>
+            <p class="font-semibold">Spiritual Cipher</p>
+            <p class="text-sm opacity-60">Local Guide</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg min-w-[300px]">
+        <p class="text-lg leading-relaxed">
+          "Went in for my first haircut here and I'll definitely be back. They know how to cut hair, and they've earned my business."
+        </p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="reviews/person4.png">
+          <div>
+            <p class="font-semibold">Matt Kaliszak</p>
+            <p class="text-sm opacity-60">Local Guide</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+            <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg min-w-[300px]">
+        <p class="text-lg leading-relaxed">
+          "Dave is the Master Barber and delivers excellent hair cuts. Fair prices and great conversations."
+        </p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="reviews/person5.png">
+          <div>
+            <p class="font-semibold">Symy</p>
+            <p class="text-sm opacity-60">Local Guide</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="my-[10vh]">
+  <div class="max-w-[1400px] mx-auto px-6">
+
+    <h1 class="text-5xl sm:text-6xl text-white font-bold text-center mb-20 font-graduate">
+      Our Work:
+    </h1>
+
+    <div class="
+      grid gap-y-24
+      sm:grid-cols-2 sm:gap-x-12
+      lg:grid-cols-3 lg:gap-y-32
+      relative
+    ">
+
+      <!-- Image 1 -->
+      <img 
+        src="cuts/cut1.jpg"
+        alt="Fresh fade haircut"
+        class="
+          w-full
+          aspect-[4/3]
+          object-cover
+          rounded-xl
+          shadow-[0_12px_30px_rgba(0,0,0,0.35)]
+          sm:-translate-y-6
+          hover:scale-[1.03]
+          transition
+        "
+      >
+
+      <!-- Image 2 -->
+      <img 
+        src="cuts/cut2.jpg"
+        alt="Barber haircut style"
+        class="
+          w-full
+          aspect-[4/3]
+          object-cover
+          rounded-xl
+          shadow-[0_16px_40px_rgba(0,0,0,0.45)]
+          sm:translate-y-6
+          hover:scale-[1.03]
+          transition
+        "
+      >
+
+      <!-- Image 3 -->
+      <img 
+        src="cuts/cut3.jpg"
+        alt="Sharp line up haircut"
+        class="
+          w-full
+          aspect-[4/3]
+          object-cover
+          rounded-xl
+          shadow-[0_30px_70px_rgba(0,0,0,0.7)]
+          scale-[1.05]
+          z-20
+          hover:scale-[1.08]
+          transition
+        "
+      >
+
+      <!-- Image 4 -->
+      <img 
+        src="cuts/cut4.jpg"
+        alt="Clean barber haircut"
+        class="
+          w-full
+          aspect-[4/3]
+          object-cover
+          rounded-xl
+          shadow-[0_14px_34px_rgba(0,0,0,0.4)]
+          sm:-translate-y-6
+          hover:scale-[1.03]
+          transition
+        "
+      >
+
+      <!-- Image 5 -->
+      <img 
+        src="cuts/cut5.jpg"
+        alt="Modern haircut style"
+        class="
+          w-full
+          aspect-[4/3]
+          object-cover
+          rounded-xl
+          shadow-[0_18px_44px_rgba(0,0,0,0.5)]
+          sm:translate-y-6
+          hover:scale-[1.03]
+          transition
+        "
+      >
+
+      <!-- Image 6 -->
+      <img 
+        src="cuts/cut6.jpg"
+        alt="Professional barber cut"
+        class="
+          w-full
+          aspect-[4/3]
+          object-cover
+          rounded-xl
+          shadow-[0_10px_26px_rgba(0,0,0,0.3)]
+          hover:scale-[1.03]
+          transition
+        "
+      >
+
+      <!-- Image 7 -->
+      <img 
+        src="cuts/cut7.jpg"
+        alt="Fresh haircut"
+        class="
+          w-full
+          aspect-[4/3]
+          object-cover
+          rounded-xl
+          shadow-[0_10px_26px_rgba(0,0,0,0.3)]
+          hover:scale-[1.03]
+          transition
+        "
+      >
+
+      <!-- Image 8 -->
+      <img 
+        src="cuts/cut8.jpg"
+        alt="Barber styling hair"
+        class="
+          w-full
+          aspect-[4/3]
+          object-cover
+          rounded-xl
+          shadow-[0_18px_44px_rgba(0,0,0,0.5)]
+          sm:translate-y-6
+          hover:scale-[1.03]
+          transition
+        "
+      >
+
+      <!-- Image 9 -->
+      <img 
+        src="cuts/cut9.jpg"
+        alt="Finished haircut"
+        class="
+          w-full
+          aspect-[4/3]
+          object-cover
+          rounded-xl
+          shadow-[0_10px_26px_rgba(0,0,0,0.3)]
+          hover:scale-[1.03]
+          transition
+        "
+      >
+
+    </div>
+  </div>
+</section>
+
+
+
+<iframe
+  class="w-full h-[400px] my-40"
+  src="https://www.google.com/maps?q=VIP%20Sharp%20Cutz%20Barber%20Shop&output=embed&z=17"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy">
+</iframe>
+
+
+
+
+
+<section>
+  <div class="
+    text-white
+    p-10
+    flex flex-col sm:flex-row
+    gap-10
+    sm:px-15
+    lg:px-[10%]
+    mt-[5vh]
+    font-outfit
+  ">
+
+    <!-- LEFT SIDE -->
+    <div class="sm:w-1/2">
+
+      <h1 
+        class="text-3xl lg:text-4xl xl:text-5xl font-bold font-graduate"
+        data-aos="zoom-in-up"
+        data-aos-duration="700">
+        <u>Book Your Next Cut</u>
+      </h1>
+
+      <p 
+        class="
+          mt-6
+          leading-relaxed
+          sm:text-lg
+          lg:w-[90%]
+        "
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="700">
+        Ready for a fresh haircut? Send us a message and we'll help you schedule your next appointment. 
+        Whether it's a classic cut, fade, or cleanup, our barbers are here to make sure you leave looking your best.
+      </p>
+
+      <div class="mt-8 space-y-3 text-lg">
+        <p>
+          📍 <span class="font-semibold">Location:</span>8627 Liberty Rd Ste 3, Randallstown, MD
+        </p>
+
+        <p>
+          📞 <span class="font-semibold">Phone:</span> (410) 655-2988
+        </p>
+
+        <p>
+          🕒 <span class="font-semibold">Hours:</span> Mon-Sat 9AM-6PM
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- FORM -->
+    <form 
+      id="contactArea"
+      class="
+        flex
+        flex-col
+        gap-3
+        w-full
+        sm:w-1/2
+        bg-[#1a1a1a]
+        rounded-2xl
+        p-6
+      "
+      data-aos="fade-up"
+      data-aos-duration="1000">
+
+      <h2 class="text-2xl font-bold mb-2 font-graduate">
+        Appointment Request
+      </h2>
+
+      <label for="name">
+        Name
+      </label>
+
+      <input 
+        type="text"
+        id="name"
+        class="
+          bg-white
+          text-[#121212]
+          p-3
+          rounded-md
+          focus:outline-none
+        "
+        placeholder="Your name">
+
+
+      <label for="phone">
+        Phone Number
+      </label>
+
+      <input 
+        type="text"
+        id="phone"
+        class="
+          bg-white
+          text-[#121212]
+          p-3
+          rounded-md
+          focus:outline-none
+        "
+        placeholder="Your phone number">
+
+
+      <label for="service">
+        Service Needed
+      </label>
+
+      <select 
+        id="service"
+        class="
+          bg-white
+          text-[#121212]
+          p-3
+          rounded-md
+        ">
+        <option>Haircut</option>
+        <option>Fade</option>
+        <option>Beard Trim</option>
+        <option>Haircut + Beard</option>
+      </select>
+
+
+      <label for="message">
+        Message
+      </label>
+
+      <textarea
+        id="message"
+        rows="5"
+        class="
+          bg-white
+          text-[#121212]
+          rounded-md
+          p-3
+          focus:outline-none
+        "
+        placeholder="Tell us what you're looking for">
+      </textarea>
+
+
+      <button 
+        type="submit"
+        class="
+          mt-4
+          bg-[#121212]
+          border-2
+          border-white
+          rounded-md
+          py-3
+          text-xl
+          font-semibold
+          hover:bg-white
+          hover:text-[#121212]
+          transition-all
+          
+        ">
+        Request Appointment
+      </button>
+
+    </form>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="font-outfit mt-20">
+     <footer class=" w-full text-[#faf9f6] flex flex-col justify-between items-center py-5 text-[#121212] border-t-4 border-[faf9f6]">
+
+    <div class="w-full flex flex-col justify-evenly items-center gap-3 sm:flex-row sm:justify-center text-center">
+
+
+
+      <!-- Opening Hours -->
+      <div class="w-full sm:w-[30%]">
+        <h1 class="font-bold text-xl mb-1 lg:text-2xl xl:text-3xl 2xl:text-4xl font-graduate">Opening Hours</h1>
+        <ol class="text-sm leading-relaxed lg:mt-3 xl:mt-5 2xl:mt-6">
+          <li>Mon – Fri: 9:00 AM – 6:00 PM</li>
+          <li>Saturday: 10:00 AM – 4:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ol>
+      </div>
+
+      <!-- Services -->
+      <div class="w-full sm:w-[30%]">
+        <h1 class="font-bold text-xl mb-1 lg:text-2xl xl:text-3xl 2xl:text-4xl font-graduate">Services</h1>
+        <ol class="text-sm leading-relaxed lg:mt-3 xl:mt-5 2xl:mt-6">
+          <li>Fade Haircuts</li>
+          <li>Line Ups/ Shape Ups</li>
+          <li>Beard Trim & Grooming</li>
+        </ol>
+      </div>
+
+      <!-- Contact -->
+      <div class="w-full sm:w-[30%]">
+        <h1 class="font-bold text-xl mb-1 lg:text-2xl xl:text-3xl 2xl:text-4xl font-graduate">Contact</h1>
+        <ol class="text-sm leading-relaxed lg:mt-3 xl:mt-5 2xl:mt-6">
+          <li><a href="#" class="hover:underline">(410) 655-2988</a></li>
+          <li><a href="#" class="hover:underline">8627 Liberty Rd Ste 3, Randallstown, MD</a></li>
+        </ol>
+      </div>
+
+    </div>
+
+    <div id="socialIcons" class="flex gap-3 mt-5">
+<i class="fab fa-tiktok text-lg sm:text-2xl"></i>
+<i class="fab fa-youtube text-lg sm:text-2xl"></i>
+<i class="fab fa-facebook text-lg sm:text-2xl text-white"></i>
+
+    </div>
+
+    <h1 class="block sm:hidden text-xs mt-1">© 2026 JY Web Design. All Rights Reserved.</h1>
+    <h1 class="hidden sm:block text-sm mt-1">© 2026 JY Web Design. All Rights Reserved. Unauthorized duplication or use is prohibited.</h1>
+
+  </footer>
+</section>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+const closeMenuBtn = document.getElementById("closeMenuBtn");
+const mobileHeader = document.getElementById("mobileHeader");
+
+menuBtn.addEventListener("click", () => {
+    mobileHeader.classList.remove("translate-x-full");
+    mobileHeader.classList.add("translate-x-0");
+});
+
+closeMenuBtn.addEventListener("click", () => {
+    mobileHeader.classList.remove("translate-x-0");
+    mobileHeader.classList.add("translate-x-full");
+});
+</script>
+</body>
+</html>
